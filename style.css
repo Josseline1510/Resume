@@ -1,84 +1,153 @@
+/* Estilos generales para el cuerpo del documento */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 12px;
-    max-width: 960px;
-    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente de texto */
+    font-size: 14px; /* Tamaño de texto base */
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: auto; /* Centrar el contenido en el cuerpo del documento */
 }
+
+/* Estilos para encabezados de nivel 1 (h1) */
 h1 {
-    font-size: 3em;
-    letter-spacing: .1em;
-    padding-top: 0.5em;
-    padding-bottom: 0em;
-    color: #333;
+    font-size: 3em; /* Tamaño del encabezado h1 */
+    letter-spacing: .1em; /* Espaciado entre caracteres */
+    padding-top: 0.5em; /* Espacio superior del encabezado h1 */
+    padding-bottom: 0em; /* Espacio inferior del encabezado h1 */
+    color: #333; /* Color del texto del encabezado h1 */
 }
 
+/* Estilos para encabezados de nivel 2 (h2) */
 h2 {
-    font-size: 1.5em;
-    padding-bottom: 1em;
+    font-size: 1.5em; /* Tamaño del encabezado h2 */
+    padding-bottom: 1em; /* Espacio inferior del encabezado h2 */
 }
 
+/* Estilos para encabezados de nivel 3 (h3) */
 h3 {
-    font-size: 1em;
-    padding-bottom: 0em;
+    font-size: 1.1em; /* Tamaño del encabezado h3 */
+    padding-bottom: 0em; /* Espacio inferior del encabezado h3 */
 }
 
-    main { 
-        display: grid;
-        grid-template-columns: 60% 40%;
-        margin-top: 3em;
-    }
+/* Estilos para el elemento principal (main) */
+main {
+    display: grid; /* Uso de un sistema de cuadrícula para el elemento principal */
+    grid-template-columns: 60% 40%; /* División en dos columnas con un 60% y un 40% de ancho */
+    margin-top: 3em; /* Espacio superior del elemento principal */
+}
 
-    header {
-        text-align: left;
-        margin: auto 1em;
-    }
-    
-    section {
-        margin: auto 1em 4em 2em;
-    }
-    
-    i {
-        margin-right: .5em;
-    }
-    
-    p {
-        margin: .2em auto
-    }
-    
-    hr {
-        border: none;
-        background-color: lightgray;
-        height: 1px;
-    }
-    
-    h1, h2, h3 {
-        font-weight: 500;
-        margin-bottom: 0;
-    }
+/* Estilos para el encabezado */
+header {
+    text-align: left; /* Alineación del texto a la izquierda en el encabezado */
+    margin: auto 1em; /* Margen automático en la parte superior e inferior, y 1em en los lados */
+    background-color: lightgray; /* Color de fondo del encabezado */
+    padding: 20px;/* Espacio interno del encabezado */
+}
 
-    p {
-        font-weight: 100;
-        margin-bottom: 0;
-    }
-    
+/* Estilos para el encabezado con diseño de grid */
+.header-grid {
+    display: grid; /* Uso de un sistema de cuadrícula para el encabezado */
+    grid-template-columns: 1fr auto; /* Una columna para el texto y otra para la imagen */
+    align-items: center; /* Centra verticalmente los elementos */
+    gap: 20px;/* Espacio entre los elementos */
+}
+
+/* Estilos para la imagen */
+.header-grid img {
+    width: 150px;/* Ancho de la imagen */
+    height: auto; /* Altura ajustada automáticamente para mantener la proporción */
+}
+
+/* Estilos para secciones */
+section {
+    margin: auto 1em 4em 2em; /* Márgenes para las secciones */
+}
+
+/* Estilos para íconos */
+i {
+    margin-right: .5em; /* Margen derecho para los íconos */
+}
+
+/* Estilos para párrafos */
+p {
+    margin: .2em auto /* Márgenes para los párrafos */
+}
+
+/* Estilos para la línea horizontal */
+hr {
+    border: none; /* Sin borde en la línea horizontal */
+    background-color: lightgray; /* Color de fondo de la línea horizontal */
+    height: 1px; /* Altura de la línea horizontal */
+}
+
+/* Estilos para encabezados de nivel 1, 2 y 3 */
+h1,
+h2,
+h3 {
+    font-weight: 500; /* Grosor de fuente para los encabezados */
+    margin-bottom: 0; /* Espacio inferior mínimo para los encabezados */
+}
+
+/* Estilos para párrafos */
+p {
+    font-weight: 50px; /* Grosor de fuente para párrafos */
+    margin-bottom: 0; /* Espacio inferior mínimo para párrafos */
+}
+
+/* Estilos para el contenido a la izquierda */
 #Left {
-    border-right: 1px solid lightgray;
+    border-right: 1px solid lightgray; /* Borde derecho para el contenido a la izquierda */
 }
 
+/* Estilos para los íconos de correo electrónico */
 .icon-envelope {
-    display: flex;
-    align-items: center;
+    display: flex; /* Elementos flexibles para los íconos de correo electrónico */
+    align-items: center; /* Alineación vertical de elementos */
     gap: 10px; /* Espacio entre el icono "envelope" y el correo electrónico */
-  }
+}
 
-  .icon-home {
-    display: flex;
-    align-items: center;
+/* Estilos para los íconos de dirección */
+.icon-home {
+    display: flex; /* Elementos flexibles para los íconos de dirección */
+    align-items: center; /* Alineación vertical de elementos */
     gap: 10px; /* Espacio entre el icono "envelope" y el correo electrónico */
-  }
+}
 
-  /* Estilo para los iconos }*/
+/* Estilo para los iconos*/
 .fa {
-    font-size: 12px;
+    font-size: 12px; /* Tamaño de fuente de los íconos */
     color: #333; /* Color de los iconos */
-  }
+}
+
+/* Estilos generales para la tabla */
+table {
+    width: 100%; /* Ancho de la tabla al 100% del contenedor */
+    border-collapse: collapse; /* Colapsar bordes de las celdas */
+    margin-top: 1px; /* Margen superior de 1px */
+}
+
+/* Estilos para las celdas del encabezado */
+th {
+    background-color: #f2f2f2; /* Color de fondo de las celdas de encabezado */
+    border: 1px solid #ddd; /* Borde de 1px y color gris claro */
+    padding: 11px; /* Espacio interno de las celdas de encabezado */
+    text-align: center; /* Alineación del texto al centro en las celdas de encabezado */
+}
+
+/* Estilos para las celdas de datos */
+td {
+    border: 1px solid #ddd; /* Borde de 1px y color gris claro en las celdas de datos */
+    padding: 10px; /* Espacio interno de las celdas de datos */
+    text-align: center; /* Alineación del texto al centro en las celdas de datos */
+}
+
+/* Estilos para las celdas de datos en la tercera columna (Institución) */
+td:nth-child(3) {
+    font-style: italic; /* Estilo de fuente en cursiva para las celdas de la tercera columna */
+}
+
+/* Estilos generales para el footer */
+footer {
+    background-color: lightgray; /* Color de fondo del footer */
+    padding: 20px; /* Espacio interno del footer */
+    text-align: center; /* Alineación del texto al centro */
+    font-style: oblique;
+}

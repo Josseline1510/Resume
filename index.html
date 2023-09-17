@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Configuración de codificación de caracteres -->
     <meta charset="UTF-8">
+    <!-- Configuración de la vista en dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
     <title>Josseline Gonzalez Beita</title>
+    <!-- Autor de la página -->
+    <meta name="author" content="Josseline González Beita">
+    <!-- Descripción de la página -->
+    <meta name="og:description" content="Resume: Josseline González Beita>
+    <!-- Enlace a la hoja de estilos de Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Enlace a la hoja de estilos personalizada (style.css) -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    
+
 </head>
+
 <body>
-    <header id="header">
-        <h1>JOSSELINE GONZALEZ BEITA</h1>
-        <h2>ID: 402320901</h2>
+    <!--Encabezado de la página con identificador "header"-->
+    <header id="header" class="header-grid">
+        <div class="header-info">
+            <h1>JOSSELINE GONZALEZ BEITA</h1>
+            <h2>ID: 402320901</h2>
+        </div>
+        <!-- Imagen personal con atributo "alt" para descripción -->
+        <img src="img/Mi foto.jpg" alt="Mi foto">
         <hr>
     </header>
     <main>
-        
+
         <article id="Left">
             <section>
                 <h2>WORK EXPERIENCE</h2>
@@ -45,16 +61,41 @@
             </section>
             <section>
                 <h2>COURSES</h2>
-                <H3>Google Data Analytics | Coursera</H3>
-                <p>2021 - Present</p>
-
-
-                <H3>Partner NDG Linux Essentials | Cisco Networking Academy</H3>
-                <p>June 2021</p>
-
-
-                <H3>Executive English Program for Customer Service | Instituto Nacional de Aprendizaje</H3>
-                <p>August 2018 - February 2020</p>
+                <table>
+                    <!-- Encabezado de la tabla -->
+                    <thead>
+                        <!-- Fila de encabezado -->
+                        <tr>
+                            <th>Course</th>
+                            <th>Institution</th>
+                            <th>Date Range</th>
+                        </tr>
+                    </thead>
+                    <!-- Cuerpo de la tabla -->
+                    <tbody>
+                        <!-- Fila de datos -->
+                        <tr>
+                            <td>Google Data Analytics</td>
+                            <td>Coursera</td>
+                            <td>2021 - Present</td>
+                        </tr>
+                        <tr>
+                            <td>Partner NDG Linux Essentials</td>
+                            <td>Cisco Networking Academy</td>
+                            <td>June 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Executive English Program for Customer Service</td>
+                            <td>Instituto Nacional de Aprendizaje</td>
+                            <td>August 2018 - February 2020</td>
+                        </tr>
+                        <tr>
+                            <td>Advanced Excel</td>
+                            <td>Ministerio de ciencia y telecomunicaciones de Costa Rica</td>
+                            <td>July 2018 - November 20218</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         </article>
         <article id="Right">
@@ -62,12 +103,12 @@
                 <h2>CONTACT</h2>
                 <span class="icon-home"></span>
                 <i class="fa fa-home" aria-hidden="true"></i>
-                <span>Urbanización Bruselas, Coyol, Alajuela</span>
+                <span>Urbanización Bruselas, Coyol, Alajuela</span><br>
 
                 <span class="icon-phone"></span>
                 <i class="fa fa-phone" aria-hidden="false"></i>
                 <span>8957-0877</span>
-                </span>
+                </span><br>
 
                 <span class="icon-envelope"></span>
                 <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -76,7 +117,9 @@
             </section>
             <section>
                 <h2>SKILLS</h2>
+                <!-- Lista desordenada de habilidades -->
                 <ul>
+                    <!--Elementos de la lista-->
                     <li>Fast Learner</li>
                     <li>Proactive</li>
                     <li>Adaptable</li>
@@ -84,7 +127,9 @@
             </section>
             <section>
                 <h2>LANGUAGES</h2>
+                <!-- Lista desordenada de lenguages -->
                 <ul>
+                    <!--Elementos de la lista-->
                     <li>English | Above 85%</li>
                     <li>Spanish | Native</li>
                 </ul>
@@ -92,7 +137,9 @@
             <section>
                 <h2>OTHER</h2>
                 <P>Experience in:</P>
+                <!-- Lista desordenada de otros -->
                 <ul>
+                    <!--Elementos de la lista-->
                     <li>Salesforce</li>
                     <li>Talx</li>
                     <li>Tableau</li>
@@ -104,14 +151,19 @@
             </section>
             <section>
                 <h2>HOBBIES</h2>
+                <!-- Lista desordenada de hobbies -->
                 <ul>
+                    <!--Elementos de la lista-->
                     <li>Swimming</li>
                     <li>Dancing</li>
                     <li>Reading</li>
                 </ul>
-            </section>              
+            </section>
         </article>
     </main>
-
+    <footer>
+        <p>&copy; 2023 Josseline González Beita</p>
+    </footer>
 </body>
+
 </html>
